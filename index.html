@@ -4,95 +4,178 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Orbiq – Privacy Policy</title>
+<meta name="description" content="How Orbiq – Number Merge Puzzle handles your data: what stays on your phone, what is shared online, and how to delete it.">
 <style>
   :root { color-scheme: dark; }
-  body { margin: 0; background: #0B0F2A; color: #E8E6F5; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-  h1 { font-size: 2rem; margin: 0 0 4px; background: linear-gradient(90deg,#18FFFF,#7C4DFF,#E040FB); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  h2 { font-size: 1.15rem; margin-top: 2em; color: #fff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0B0F2A; color: #E8E6F5; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 32px 20px 72px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; background: linear-gradient(90deg,#18FFFF,#7C4DFF,#E040FB); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  h2 { font-size: 1.2rem; margin: 2.2em 0 .5em; color: #fff; scroll-margin-top: 16px; }
+  h3 { font-size: 1rem; margin: 1.4em 0 .3em; color: #fff; }
   p, li { color: #C9C6DE; }
+  ul { padding-left: 1.2em; }
   .muted { color: #8E8AAE; font-size: .9rem; }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
-  th, td { border: 1px solid #2E2A5A; padding: 8px; text-align: left; vertical-align: top; }
+  .card { background: #15123A; border: 1px solid #2E2A5A; border-radius: 14px; padding: 16px 18px; margin: 18px 0; }
+  .card ul { margin: 0; }
+  .card li { margin: 4px 0; }
+  .yes { color: #69F0AE; font-weight: 600; }
+  .no { color: #FF8A80; font-weight: 600; }
+  nav ol { columns: 2; column-gap: 28px; padding-left: 1.2em; margin: 8px 0 0; }
+  nav li { margin: 2px 0; }
+  .table { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; min-width: 520px; }
+  th, td { border: 1px solid #2E2A5A; padding: 8px 10px; text-align: left; vertical-align: top; }
   th { background: #1A1446; color: #fff; }
   a { color: #18FFFF; }
+  code { background: #1A1446; padding: 1px 6px; border-radius: 6px; font-size: .9em; }
+  @media (max-width: 560px) { nav ol { columns: 1; } h1 { font-size: 1.6rem; } }
 </style>
 </head>
 <body>
 <main>
 <h1>Orbiq – Privacy Policy</h1>
-<p class="muted">App: Orbiq – Number Merge Puzzle (package com.orbiq.game) · Effective date: 10 October 2026 · Last updated: 10 October 2026</p>
+<p class="muted">Orbiq – Number Merge Puzzle (Android, package <code>com.orbiq.game</code>) by Moonbyte Labs · Effective date: 11 October 2026 · Last updated: 11 October 2026</p>
+<p class="muted">This policy is written in English, which is the official version. The app also shows a short translated note in Japanese, Spanish, French, German, Russian, Portuguese, Korean and Turkish.</p>
 
-<p class="muted">This policy is written in English. The English version is the official one; the app shows it with a translated note in Japanese, Spanish, French, German, Russian, Portuguese, Korean and Turkish.</p>
+<p>Orbiq is a relaxing number-merge puzzle game. We built it to be fun without collecting more than it needs. This policy explains, in plain words, what data the game uses, why, who can see it, how long it is kept and how you can delete it.</p>
 
-<h2>Summary</h2>
-<p>Orbiq is a puzzle game. It shows <strong>no ads</strong>, has <strong>no in-app purchases</strong> and has <strong>no sign-up</strong>. We do not ask for or collect your real name, email address, phone number, contacts, photos or location. We do not sell any data. The game plays fully offline; only the optional online features below send data.</p>
+<div class="card">
+<h3 style="margin-top:0">At a glance</h3>
+<ul>
+<li><span class="no">No</span> ads, <span class="no">no</span> in-app purchases, <span class="no">no</span> account or sign-up.</li>
+<li><span class="no">Never</span> collected: your real name, email address, phone number, contacts, photos, files, microphone, camera or precise location.</li>
+<li><span class="no">Never</span> sold, rented or shared with advertisers. The advertising ID is turned off.</li>
+<li>The game plays <span class="yes">fully offline</span>. Your progress is saved on your phone.</li>
+<li>Online features (Star League, invite friends, sharing, Google Play Games) use only a nickname you choose and a random anonymous ID.</li>
+<li>You can <span class="yes">delete your online data at any time</span> from the game: Settings → Delete my leaderboard data.</li>
+</ul>
+</div>
 
-<h2>1. Data stored on your device</h2>
-<p>To let you continue where you left off, the game stores on your device: your boards, scores, best score, highest orb, level stars, Stardust balance, power-ups, daily reward and streak status, missions, player level, unlocked themes and trails, your profile (the nickname you choose, your avatar and frame), your own records (My Records), and your settings (sound, music, vibration, reminders, language and time zone). Your language and time zone choice stay on the phone and are never sent. Except for the Star League data in section 2, this data stays on your device and is removed when you uninstall the app or clear its storage.</p>
+<nav aria-label="Contents">
+<strong>Contents</strong>
+<ol>
+<li><a href="#who">Who we are</a></li>
+<li><a href="#device">Data saved on your phone</a></li>
+<li><a href="#league">Star League and nicknames</a></li>
+<li><a href="#invite">Invite friends</a></li>
+<li><a href="#share">Sharing your results</a></li>
+<li><a href="#google">Google Play features</a></li>
+<li><a href="#analytics">Analytics and crash reports</a></li>
+<li><a href="#notifications">Reminders</a></li>
+<li><a href="#permissions">Permissions</a></li>
+<li><a href="#providers">Service providers</a></li>
+<li><a href="#retention">How long data is kept</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#choices">Your choices and rights</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#changes">Changes to this policy</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol>
+</nav>
 
-<h2>2. Star League (daily leaderboard)</h2>
-<p>When you finish a Classic game, or leave one that is still in progress (pause, go Home or switch apps), Orbiq sends your best score of the day to the Star League, which runs on Google Firebase (Cloud Firestore, servers in the United States, region us-central1). The following is sent and stored:</p>
+<h2 id="who">1. Who we are</h2>
+<p>Orbiq is made by Moonbyte Labs (“we”, “us”). We are responsible for the data described here. You can reach us at <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a>.</p>
+
+<h2 id="device">2. Data saved on your phone</h2>
+<p>So you can continue where you left off, the game saves on your phone: your boards and scores, best score and highest orb, level stars, Stardust and power-ups, daily reward and streaks, missions, player level and XP, unlocked themes and trails, your profile (the nickname you choose, your avatar and frame), your own records (My Records) and your settings (sound, voice, music, vibration, reminders, language and time zone).</p>
+<p>This data stays on your phone. Your language and time zone choices are never sent anywhere. Everything is removed when you uninstall the game or clear its storage. Only the data described in sections 3 to 7 ever leaves your phone.</p>
+
+<h2 id="league">3. Star League and nicknames</h2>
+<p>The Star League is a daily worldwide leaderboard. When you finish a Classic game, or leave one that is still running (pause, go Home or switch apps), the game sends your best score of the day. It runs on Google Firebase (Cloud Firestore, servers in the United States).</p>
+<div class="table">
 <table>
 <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
 <tr><td>Your in-game nickname</td><td>Your name on the board</td><td>Other players</td></tr>
-<tr><td>The IDs of your chosen avatar and frame</td><td>Your picture on the board</td><td>Other players</td></tr>
-<tr><td>Your player level</td><td>Shown next to your name</td><td>Other players</td></tr>
+<tr><td>The IDs of your chosen avatar and frame, and your player level</td><td>Your picture and level next to your name</td><td>Other players</td></tr>
 <tr><td>Your best score of the day and your highest orb</td><td>Ranking</td><td>Other players</td></tr>
-<tr><td>The time of that score (last played time)</td><td>Ranking ties, "played 5 min ago"</td><td>Other players</td></tr>
-<tr><td>A random anonymous player ID (Firebase Authentication)</td><td>So only you can change or delete your own scores</td><td>Not shown</td></tr>
-<tr><td>Your nickname reserved for you (in lower case), with your anonymous player ID and the times of your last two name changes</td><td>Nicknames are unique, and a name can change at most twice in 7 days</td><td>Not shown (other players only learn that a name is taken)</td></tr>
+<tr><td>The time of that score</td><td>Breaking ties and showing “played 5 min ago”</td><td>Other players</td></tr>
+<tr><td>A random anonymous player ID (Firebase Authentication)</td><td>So only you can change or delete your own data</td><td>Not shown</td></tr>
+<tr><td>Your reserved nickname (in lower case), with your anonymous player ID and the times of your last two name changes</td><td>Every nickname belongs to one player, and a name can change at most twice in 7 days</td><td>Not shown (others only learn that a name is taken)</td></tr>
 </table>
-<p>No email, real name, contacts or location are sent. Firebase App Check with Google Play Integrity is used to block fake requests. When you are offline, your scores wait on your device and are sent automatically when you are back online. Star League data is kept until you delete it (section 8). Firebase processes this data for us as a service provider under the <a href="https://firebase.google.com/support/privacy">Firebase terms</a>.</p>
+</div>
+<p>So the board is never empty after the daily reset, it shows each player's latest score from the last 7 days: if you do not play on a day, your most recent score (shown faded) stays visible to other players until you play again or it is more than 7 days old.</p>
+<p>No email, real name, contacts or location are sent. If you are offline, scores wait on your phone and are sent automatically when you are back online. Firebase App Check with Google Play Integrity is used to block fake requests and cheating; it checks that requests come from the real Orbiq app.</p>
 
-<h2>2b. Invite friends</h2>
-<p>Every player gets a personal invite link (<code>https://orbiq-aeb4c.web.app/i/CODE</code>). To give the right rewards, Orbiq stores in Google Firebase (Cloud Firestore, United States):</p>
+<h2 id="invite">4. Invite friends</h2>
+<p>Every player gets a personal invite link (<code>https://orbiq-aeb4c.web.app/i/CODE</code>). When a friend installs Orbiq from your link, you both earn Stardust inside the game. To give the right rewards, the game stores in Google Firebase (Cloud Firestore, United States):</p>
 <ul>
-<li>your invite code with your anonymous player ID and nickname;</li>
-<li>when someone installs or opens Orbiq from your link: their nickname, avatar ID, whether they were a new player, the time, and a <strong>one-way hash of their phone's Android ID</strong>. Only the owner of the link can see this list (nickname, avatar, status, time).</li>
-<li>a one-way hash of each phone's Android ID that has been seen, so that reinstalling Orbiq can never count as a new player (fraud prevention). The original ID is never sent and cannot be recovered from the hash.</li>
+<li>your invite code, with your anonymous player ID and nickname;</li>
+<li>when someone installs or opens Orbiq from your link: their nickname, avatar ID, whether they were a new player, the time, and a one-way hash of their phone's Android ID. Only you, the owner of the link, can see this list (nickname, avatar, status and time);</li>
+<li>a one-way hash of each phone's Android ID that has been seen, so that reinstalling Orbiq can never count as a new player (fraud prevention). The hash is made on the phone; the original ID is never sent and cannot be recovered from the hash.</li>
 </ul>
-<p>Which link installed the app is read from Google Play (Install Referrer). Rewards are Stardust inside the game only. Delete this data with <strong>Settings → Delete my leaderboard data</strong> (your code, your friends list and your rows on other players' lists) or by email (section 8).</p>
+<p>Which link installed the game is read from Google Play (Install Referrer). Rewards are Stardust inside the game only; there is no money or real-world prize.</p>
 
-<h2>3. Google Play Games Services (optional)</h2>
-<p>If you choose to connect Google Play Games, Google provides leaderboards, achievements and a cloud save. Your Play Games profile name may appear on leaderboards. The cloud save contains only your game progress (as listed in section 1) and is stored in your Google account by Google. This processing is done by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can stop using Play Games at any time in the Google Play Games app.</p>
+<h2 id="share">5. Sharing your results</h2>
+<p>You can share a score, a completed level, a Daily Challenge win, your Star League rank or your best. The share image is created on your phone. You choose the app to send it with (Android share menu), or copy the text yourself. Nothing is sent to us when you share.</p>
+<p>The image shows your score, highest orb and the result you are sharing. It shows your nickname and avatar only while “Show my name” is on (you can turn it off before sharing). The text includes your invite link, so friends who install from it count as your invites (section 4). What happens to a shared image afterwards is decided by the app you send it with and the people you send it to.</p>
 
-<h2>4. Analytics and crash reports</h2>
-<p>We use Google Firebase Analytics and Firebase Crashlytics to understand how the game is played and to fix crashes.</p>
+<h2 id="google">6. Google Play features</h2>
+<p><strong>Google Play Games (optional).</strong> If you choose to connect Google Play Games, Google provides leaderboards, achievements and a cloud save of your game progress (section 2) in your Google account. Your Play Games profile name may appear on its leaderboards. You can stop using it at any time in the Google Play Games app.</p>
+<p><strong>Ratings and updates.</strong> The game may ask Google Play to show its rating card, and may show a Google Play update notice when a new version is available. Both screens are shown by Google Play; we never see your rating text or Google account.</p>
+<p>These features are provided by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2 id="analytics">7. Analytics and crash reports</h2>
+<p>We use Google Firebase Analytics and Firebase Crashlytics to learn which parts of the game people enjoy and to fix crashes.</p>
+<div class="table">
 <table>
 <tr><th>Service</th><th>What is collected</th><th>Why</th></tr>
-<tr><td>Firebase Analytics</td><td>Game events with numbers only (for example: game started, game over with score and highest orb, level up, power-up used, mission completed), an app instance ID, and basic device information (model, OS version, language, approximate country derived from the network).</td><td>Improve game balance and features.</td></tr>
-<tr><td>Firebase Crashlytics</td><td>Crash reports: stack traces, device model, OS version, app version, and an installation ID.</td><td>Find and fix crashes.</td></tr>
+<tr><td>Firebase Analytics</td><td>Game events with numbers only (for example: game started, game over with score and highest orb, level finished, power-up used, mission completed), an app instance ID, and basic device information (model, Android version, language, approximate country from the network).</td><td>Improve game balance and features</td></tr>
+<tr><td>Firebase Crashlytics</td><td>Crash reports: technical error details, device model, Android version, app version and an installation ID.</td><td>Find and fix crashes</td></tr>
 </table>
-<p>We have <strong>turned off collection of the advertising ID</strong> and ad personalization signals. Analytics data is not linked to your identity, not shared with advertisers, and not used for advertising. Data is sent encrypted (HTTPS). Firebase keeps analytics data for a limited time (by default up to 14 months) and Crashlytics data for 90 days. Learn more in <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</p>
+</div>
+<p>Collection of the advertising ID and ad personalization signals is <strong>turned off</strong>. This data is not linked to your identity, not shared with advertisers and never used for advertising.</p>
 
-<h2>5. Notifications</h2>
-<p>If you allow notifications, the game schedules at most one local reminder per day about the game (daily challenge, missions or streak). Reminders are created on your device, do not contain advertising, and can be turned off in the game's Settings or in your phone's settings.</p>
+<h2 id="notifications">8. Reminders</h2>
+<p>If you allow notifications, the game shows at most one reminder a day about the game (Daily Challenge, missions or your streak). Reminders are created on your phone, are not sent from a server, never contain ads, and can be turned off in the game's Settings or in your phone's settings.</p>
 
-<h2>6. Permissions</h2>
+<h2 id="permissions">9. Permissions</h2>
 <ul>
-<li><strong>Internet / network state</strong>: the Star League (sending scores when you are online), Play Games, cloud save and analytics. The game itself plays fully offline.</li>
-<li><strong>Notifications</strong> and <strong>run at startup</strong>: show your daily reminder and keep it after the phone restarts.</li>
-<li><strong>Vibration</strong>: haptic feedback (can be turned off in Settings).</li>
+<li><strong>Internet and network state:</strong> the Star League, invites, Google Play Games, analytics and crash reports. The game itself plays fully offline.</li>
+<li><strong>Notifications, run at startup and wake lock:</strong> show your daily reminder at the right time, also after the phone restarts.</li>
+<li><strong>Vibration:</strong> haptic feedback (can be turned off in Settings).</li>
 </ul>
+<p>The game does not ask for access to your contacts, photos, files, camera, microphone or location.</p>
 
-<h2>7. Children</h2>
-<p>Orbiq is intended for players aged 13 and older and is not directed at children. We do not knowingly collect personal information from children.</p>
+<h2 id="providers">10. Service providers</h2>
+<p>We use only Google services, which process data for us under their terms: Firebase (Cloud Firestore, Authentication, App Check, Analytics, Crashlytics, Hosting for invite links) and Google Play (Play Games, Install Referrer, ratings and updates). Firebase data is stored in the United States. Learn more in <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. We do not sell or rent data to anyone.</p>
 
-<h2>8. Your choices and deleting data</h2>
+<h2 id="retention">11. How long data is kept</h2>
+<div class="table">
+<table>
+<tr><th>Data</th><th>Kept</th></tr>
+<tr><td>Game progress on your phone</td><td>Until you uninstall the game or clear its storage</td></tr>
+<tr><td>Star League scores, reserved nickname, invite data</td><td>Until you delete it (section 13)</td></tr>
+<tr><td>Analytics</td><td>Up to 14 months (Firebase default), then deleted automatically</td></tr>
+<tr><td>Crash reports</td><td>90 days, then deleted automatically</td></tr>
+<tr><td>Phone ID hashes (invite fraud prevention)</td><td>Kept so a reinstall is never counted as new; they cannot identify you</td></tr>
+</table>
+</div>
+
+<h2 id="security">12. Security</h2>
+<p>All online data is sent encrypted (HTTPS). Strict server rules allow each player to change or delete only their own data, accept only valid scores and keep everything else closed. Firebase App Check helps make sure requests come from the real app. No method of storage or transfer is perfectly secure, but we use these protections to keep your data safe.</p>
+
+<h2 id="choices">13. Your choices and rights</h2>
 <ul>
-<li><strong>Star League, in the app:</strong> open <strong>Settings → Delete my leaderboard data</strong>. This immediately deletes your scores from every daily board, releases your reserved nickname and deletes your anonymous player ID (needs an internet connection). Your progress and records on the phone stay. If you play Classic again later, you join with a new anonymous ID.</li>
-<li><strong>Star League, by email:</strong> you can also request deletion by writing to <a href="mailto:moonbytelabs.support@gmail.com?subject=Orbiq%20Star%20League%20data%20deletion">moonbytelabs.support@gmail.com</a> with the subject "Orbiq Star League data deletion", your in-game nickname and the days you played. We delete the matching Star League data within 30 days and confirm by email.</li>
-<li><strong>Data on your device:</strong> uninstall the game or clear its storage.</li>
-<li><strong>Play Games:</strong> delete your Play Games data in the Google Play Games app.</li>
-<li><strong>Analytics:</strong> analytics data is not linked to your identity; for questions, contact us at the address below.</li>
+<li><strong>Delete your online data in the game:</strong> Settings → Delete my leaderboard data. This immediately deletes your scores from every daily board, releases your reserved nickname, deletes your invite code and friends list (and your rows on other players' lists) and deletes your anonymous player ID. It needs an internet connection. Your progress on the phone stays. If you play Classic again later, you join with a new anonymous ID.</li>
+<li><strong>Delete by email:</strong> write to <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a> with the subject “Orbiq data deletion”, your nickname and the days you played. We delete the matching data within 30 days and confirm by email.</li>
+<li><strong>Stay offline:</strong> the game works fully without the internet; nothing is sent while you are offline.</li>
+<li><strong>Hide your name when sharing:</strong> turn off “Show my name” on the share screen.</li>
+<li><strong>Turn off reminders:</strong> in Settings, or in your phone's notification settings.</li>
+<li><strong>Data on your phone:</strong> uninstall the game or clear its storage.</li>
+<li><strong>Google Play Games:</strong> manage or delete it in the Google Play Games app.</li>
 </ul>
+<p>Depending on where you live, you may have the right to access, correct or delete your data, or to object to its use. To use any of these rights, email us; we answer within 30 days.</p>
 
-<h2>9. Changes</h2>
-<p>If we change this policy (for example, if a future version adds ads or purchases), we will update this page and the date above before the change takes effect.</p>
+<h2 id="children">14. Children</h2>
+<p>Orbiq is intended for players aged 13 and older and is not directed at children. We do not knowingly collect personal information from children under 13. If you believe a child has used the online features, email us and we will delete that data.</p>
 
-<h2>10. Contact</h2>
-<p>Questions about privacy: <strong><a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a></strong></p>
+<h2 id="changes">15. Changes to this policy</h2>
+<p>If the game changes how it uses data (for example, if it ever adds ads or purchases), we will update this page and the date at the top before the change takes effect.</p>
+
+<h2 id="contact">16. Contact</h2>
+<p>Questions or requests about privacy: <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a></p>
+<p class="muted">© 2026 Moonbyte Labs. All rights reserved.</p>
 </main>
 </body>
 </html>
