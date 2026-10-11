@@ -43,9 +43,9 @@
 <div class="card">
 <h3 style="margin-top:0">At a glance</h3>
 <ul>
-<li><span class="no">No</span> ads, <span class="no">no</span> in-app purchases, <span class="no">no</span> account or sign-up.</li>
+<li><span class="no">No</span> account or sign-up. Ads come from Google AdMob: videos you <span class="yes">choose</span> to watch for a reward, and now and then an ad between games. Optional one-time items are sold through Google Play.</li>
 <li><span class="no">Never</span> collected: your real name, email address, phone number, contacts, photos, files, microphone, camera or precise location.</li>
-<li><span class="no">Never</span> sold, rented or shared with advertisers. The advertising ID is turned off.</li>
+<li><span class="no">Never</span> sold or rented. The advertising ID is used only by Google AdMob to show ads (section 7); in the EU, EEA, UK and Switzerland you are asked for consent first, and in US states with privacy laws you can opt out.</li>
 <li>The game plays <span class="yes">fully offline</span>. Your progress is saved on your phone.</li>
 <li>Online features (Star League, invite friends, sharing, Google Play Games) use only a nickname you choose and a random anonymous ID.</li>
 <li>You can <span class="yes">delete your online data at any time</span> from the game: Settings → Delete my leaderboard data.</li>
@@ -61,6 +61,8 @@
 <li><a href="#invite">Invite friends</a></li>
 <li><a href="#share">Sharing your results</a></li>
 <li><a href="#google">Google Play features</a></li>
+<li><a href="#ads">Ads (Google AdMob)</a></li>
+<li><a href="#purchases">Purchases</a></li>
 <li><a href="#analytics">Analytics and crash reports</a></li>
 <li><a href="#notifications">Reminders</a></li>
 <li><a href="#permissions">Permissions</a></li>
@@ -115,7 +117,21 @@
 <p><strong>Ratings and updates.</strong> The game may ask Google Play to show its rating card, and may show a Google Play update notice when a new version is available. Both screens are shown by Google Play; we never see your rating text or Google account.</p>
 <p>These features are provided by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2 id="analytics">7. Analytics and crash reports</h2>
+<h2 id="ads">7. Ads (Google AdMob)</h2>
+<p>From version 2.0 the game shows ads provided by Google AdMob:</p>
+<ul>
+<li><strong>Rewarded ads</strong> are always your choice: a button such as “Watch an ad: ×2” gives a reward (more Stardust, a free power-up or a Second Chance) after the video.</li>
+<li><strong>Ads between games</strong> appear only at a break, never during play: after a level is won, and after a finished game or when leaving a game once you have played for a few minutes. A new player's first minutes are ad-free. The “Remove Ads” purchase turns them off.</li>
+</ul>
+<p>To show ads, measure them and prevent fraud, Google collects your phone's <strong>advertising ID</strong>, your <strong>IP address</strong> (used for approximate location), device information (model, Android version, language) and how you interact with ads. Google may use this data for personalized ads where you allowed it. This is done by Google under the <a href="https://policies.google.com/technologies/ads">Google advertising policies</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>; we do not receive this data.</p>
+<p><strong>Consent:</strong> in the EU, EEA, UK and Switzerland the game shows Google's consent form before any ad is loaded. You can change your choice at any time in Settings → Shop &amp; ads → Ad privacy choices. Everywhere, you can reset or delete your advertising ID or opt out of personalized ads in your phone's settings (Settings → Google → Ads, or Settings → Privacy → Ads).</p>
+<p><strong>United States:</strong> in US states with privacy laws (for example California), sharing data with Google for personalized ads may count as a “sale” or “sharing” of personal information. You can opt out at any time in Settings → Shop &amp; ads → Ad privacy choices (“Don't sell or share my data”); you will then see only non-personalized ads. We do not sell data in any other way.</p>
+<p>Google's Privacy Sandbox ad features on Android (Topics and ad attribution) are turned off in Orbiq.</p>
+
+<h2 id="purchases">8. Purchases</h2>
+<p>The game sells optional one-time items (for example “Remove Ads” and a theme pack). Purchases are made and paid through <strong>Google Play</strong>; we never see your card or payment details. The list of items you own is saved on your phone and Google Play restores it on a new phone (Settings → Shop &amp; ads → Restore purchases). Firebase Analytics records that a purchase happened (which item, its price and currency) so we know which items players like. Stardust, the in-game currency, cannot be bought; it is earned only by playing. Refunds follow Google Play's refund policy.</p>
+
+<h2 id="analytics">9. Analytics and crash reports</h2>
 <p>We use Google Firebase Analytics and Firebase Crashlytics to learn which parts of the game people enjoy and to fix crashes.</p>
 <div class="table">
 <table>
@@ -124,38 +140,40 @@
 <tr><td>Firebase Crashlytics</td><td>Crash reports: technical error details, device model, Android version, app version and an installation ID.</td><td>Find and fix crashes</td></tr>
 </table>
 </div>
-<p>Collection of the advertising ID and ad personalization signals is <strong>turned off</strong>. This data is not linked to your identity, not shared with advertisers and never used for advertising.</p>
+<p>For Firebase, collection of the advertising ID and ad personalization signals is <strong>turned off</strong>. Analytics and crash data are not linked to your identity, not shared with advertisers and never used for advertising.</p>
 
-<h2 id="notifications">8. Reminders</h2>
+<h2 id="notifications">10. Reminders</h2>
 <p>If you allow notifications, the game shows at most one reminder a day about the game (Daily Challenge, missions or your streak). Reminders are created on your phone, are not sent from a server, never contain ads, and can be turned off in the game's Settings or in your phone's settings.</p>
 
-<h2 id="permissions">9. Permissions</h2>
+<h2 id="permissions">11. Permissions</h2>
 <ul>
-<li><strong>Internet and network state:</strong> the Star League, invites, Google Play Games, analytics and crash reports. The game itself plays fully offline.</li>
+<li><strong>Internet and network state:</strong> the Star League, invites, Google Play Games, ads, purchases, analytics and crash reports. The game itself plays fully offline.</li>
+<li><strong>Advertising ID:</strong> used by Google AdMob to show ads (section 7).</li>
+<li><strong>Google Play billing:</strong> make purchases through Google Play (section 8).</li>
 <li><strong>Notifications, run at startup and wake lock:</strong> show your daily reminder at the right time, also after the phone restarts.</li>
 <li><strong>Vibration:</strong> haptic feedback (can be turned off in Settings).</li>
 </ul>
 <p>The game does not ask for access to your contacts, photos, files, camera, microphone or location.</p>
 
-<h2 id="providers">10. Service providers</h2>
-<p>We use only Google services, which process data for us under their terms: Firebase (Cloud Firestore, Authentication, App Check, Analytics, Crashlytics, Hosting for invite links) and Google Play (Play Games, Install Referrer, ratings and updates). Firebase data is stored in the United States. Learn more in <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. We do not sell or rent data to anyone.</p>
+<h2 id="providers">12. Service providers</h2>
+<p>We use only Google services, which process data for us under their terms: Firebase (Cloud Firestore, Authentication, App Check, Analytics, Crashlytics, Hosting for invite links) Google Play (Play Games, Install Referrer, ratings and updates, billing) and Google AdMob (ads and the consent form). Firebase data is stored in the United States, so your data may be processed outside your country. Google protects such transfers with safeguards such as the European Commission's Standard Contractual Clauses. Learn more in <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. We do not sell or rent data to anyone.</p>
 
-<h2 id="retention">11. How long data is kept</h2>
+<h2 id="retention">13. How long data is kept</h2>
 <div class="table">
 <table>
 <tr><th>Data</th><th>Kept</th></tr>
 <tr><td>Game progress on your phone</td><td>Until you uninstall the game or clear its storage</td></tr>
-<tr><td>Star League scores, reserved nickname, invite data</td><td>Until you delete it (section 13)</td></tr>
+<tr><td>Star League scores, reserved nickname, invite data</td><td>Until you delete it (section 15)</td></tr>
 <tr><td>Analytics</td><td>Up to 14 months (Firebase default), then deleted automatically</td></tr>
 <tr><td>Crash reports</td><td>90 days, then deleted automatically</td></tr>
 <tr><td>Phone ID hashes (invite fraud prevention)</td><td>Kept so a reinstall is never counted as new; they cannot identify you</td></tr>
 </table>
 </div>
 
-<h2 id="security">12. Security</h2>
+<h2 id="security">14. Security</h2>
 <p>All online data is sent encrypted (HTTPS). Strict server rules allow each player to change or delete only their own data, accept only valid scores and keep everything else closed. Firebase App Check helps make sure requests come from the real app. No method of storage or transfer is perfectly secure, but we use these protections to keep your data safe.</p>
 
-<h2 id="choices">13. Your choices and rights</h2>
+<h2 id="choices">15. Your choices and rights</h2>
 <ul>
 <li><strong>Delete your online data in the game:</strong> Settings → Delete my leaderboard data. This immediately deletes your scores from every daily board, releases your reserved nickname, deletes your invite code and friends list (and your rows on other players' lists) and deletes your anonymous player ID. It needs an internet connection. Your progress on the phone stays. If you play Classic again later, you join with a new anonymous ID.</li>
 <li><strong>Delete by email:</strong> write to <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a> with the subject “Orbiq data deletion”, your nickname and the days you played. We delete the matching data within 30 days and confirm by email.</li>
@@ -164,16 +182,24 @@
 <li><strong>Turn off reminders:</strong> in Settings, or in your phone's notification settings.</li>
 <li><strong>Data on your phone:</strong> uninstall the game or clear its storage.</li>
 <li><strong>Google Play Games:</strong> manage or delete it in the Google Play Games app.</li>
+<li><strong>Ads:</strong> change your ad consent (EU, EEA, UK, Switzerland) or opt out of the sale or sharing of your data (US states with privacy laws) in Settings → Shop &amp; ads → Ad privacy choices, reset or delete your advertising ID in your phone's settings, or buy “Remove Ads” to stop ads between games.</li>
 </ul>
-<p>Depending on where you live, you may have the right to access, correct or delete your data, or to object to its use. To use any of these rights, email us; we answer within 30 days.</p>
+<p>Depending on where you live, you may have the right to access, correct or delete your data, to receive a copy of it, to restrict or object to its use, and to withdraw consent at any time. To use any of these rights, email us; we answer within 30 days. We will never treat you differently for using your rights.</p>
+<h3>Legal bases (EU, EEA, UK and Switzerland)</h3>
+<ul>
+<li><strong>Performance of our agreement with you</strong> (providing the game you chose to use): Star League, nicknames, invites, purchases and restoring them.</li>
+<li><strong>Consent:</strong> personalized ads and the advertising ID (Google's consent form), and reminders (Android notification permission). You can withdraw consent at any time without affecting earlier use.</li>
+<li><strong>Legitimate interests</strong> (keeping the game working, fair and improving): analytics, crash reports, App Check, invite fraud prevention and non-personalized ads.</li>
+</ul>
+<p>If you think we have not handled your data correctly, please email us first. You also have the right to complain to the data protection authority in your country.</p>
 
-<h2 id="children">14. Children</h2>
+<h2 id="children">16. Children</h2>
 <p>Orbiq is intended for players aged 13 and older and is not directed at children. We do not knowingly collect personal information from children under 13. If you believe a child has used the online features, email us and we will delete that data.</p>
 
-<h2 id="changes">15. Changes to this policy</h2>
-<p>If the game changes how it uses data (for example, if it ever adds ads or purchases), we will update this page and the date at the top before the change takes effect.</p>
+<h2 id="changes">17. Changes to this policy</h2>
+<p>If the game changes how it uses data, we will update this page and the date at the top before the change takes effect.</p>
 
-<h2 id="contact">16. Contact</h2>
+<h2 id="contact">18. Contact</h2>
 <p>Questions or requests about privacy: <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a></p>
 <p class="muted">© 2026 Moonbyte Labs. All rights reserved.</p>
 </main>
