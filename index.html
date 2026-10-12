@@ -35,7 +35,7 @@
 <body>
 <main>
 <h1>Orbiq – Privacy Policy</h1>
-<p class="muted">Orbiq – Number Merge Puzzle (Android, package <code>com.orbiq.game</code>) by Moonbyte Labs · Effective date: 11 October 2026 · Last updated: 11 October 2026</p>
+<p class="muted">Orbiq – Number Merge Puzzle (Android, package <code>com.orbiq.game</code>) by Moonbyte Labs · Effective date: 11 October 2026 · Last updated: 12 October 2026</p>
 <p class="muted">This policy is written in English, which is the official version. The app also shows a short translated note in Japanese, Spanish, French, German, Russian, Portuguese, Korean and Turkish.</p>
 
 <p>Orbiq is a relaxing number-merge puzzle game. We built it to be fun without collecting more than it needs. This policy explains, in plain words, what data the game uses, why, who can see it, how long it is kept and how you can delete it.</p>
@@ -64,7 +64,7 @@
 <li><a href="#ads">Ads (Google AdMob)</a></li>
 <li><a href="#purchases">Purchases</a></li>
 <li><a href="#analytics">Analytics and crash reports</a></li>
-<li><a href="#notifications">Reminders</a></li>
+<li><a href="#notifications">Reminders, sales and news</a></li>
 <li><a href="#permissions">Permissions</a></li>
 <li><a href="#providers">Service providers</a></li>
 <li><a href="#retention">How long data is kept</a></li>
@@ -129,7 +129,7 @@
 <p>Google's Privacy Sandbox ad features on Android (Topics and ad attribution) are turned off in Orbiq.</p>
 
 <h2 id="purchases">8. Purchases</h2>
-<p>The game sells optional one-time items (for example “Remove Ads” and a theme pack). Purchases are made and paid through <strong>Google Play</strong>; we never see your card or payment details. The list of items you own is saved on your phone and Google Play restores it on a new phone (Settings → Shop &amp; ads → Restore purchases). Firebase Analytics records that a purchase happened (which item, its price and currency) so we know which items players like. Stardust, the in-game currency, cannot be bought; it is earned only by playing. Refunds follow Google Play's refund policy.</p>
+<p>The game sells optional one-time items (for example “Remove Ads” and a theme pack) and Stardust packs (the in-game currency). Purchases are made and paid through <strong>Google Play</strong>; we never see your card or payment details. The list of items you own is saved on your phone and Google Play restores it on a new phone (Settings → Shop &amp; ads → Restore purchases). Firebase Analytics records that a purchase happened (which item, its price and currency) so we know which items players like. Stardust can also be earned by playing and from rewarded ads. Stardust packs are used up once bought, so Google Play does not restore them on a new phone; your Stardust balance is part of your game data. Refunds follow Google Play's refund policy.</p>
 
 <h2 id="analytics">9. Analytics and crash reports</h2>
 <p>We use Google Firebase Analytics and Firebase Crashlytics to learn which parts of the game people enjoy and to fix crashes.</p>
@@ -142,21 +142,22 @@
 </div>
 <p>For Firebase, collection of the advertising ID and ad personalization signals is <strong>turned off</strong>. Analytics and crash data are not linked to your identity, not shared with advertisers and never used for advertising.</p>
 
-<h2 id="notifications">10. Reminders</h2>
+<h2 id="notifications">10. Reminders, sales and news</h2>
 <p>If you allow notifications, the game shows at most one reminder a day about the game (Daily Challenge, missions or your streak). Reminders are created on your phone, are not sent from a server, never contain ads, and can be turned off in the game's Settings or in your phone's settings.</p>
+<p>From version 2.0.3, we may also send occasional messages about Orbiq itself, such as a sale in the game's shop, a new feature or an event, through Firebase Cloud Messaging. To deliver them, Firebase gives your copy of the game a random messaging token, and the game joins the message groups for all players and for the language you use in the game. No name, email or other personal information is used. These messages are only about Orbiq, never contain ads from others, and can be turned off with “Sales &amp; news” in the game's Settings or in your phone's notification settings.</p>
 
 <h2 id="permissions">11. Permissions</h2>
 <ul>
 <li><strong>Internet and network state:</strong> the Star League, invites, Google Play Games, ads, purchases, analytics and crash reports. The game itself plays fully offline.</li>
 <li><strong>Advertising ID:</strong> used by Google AdMob to show ads (section 7).</li>
 <li><strong>Google Play billing:</strong> make purchases through Google Play (section 8).</li>
-<li><strong>Notifications, run at startup and wake lock:</strong> show your daily reminder at the right time, also after the phone restarts.</li>
+<li><strong>Notifications, run at startup and wake lock:</strong> show your daily reminder at the right time, also after the phone restarts, and receive sales and news messages (Firebase Cloud Messaging).</li>
 <li><strong>Vibration:</strong> haptic feedback (can be turned off in Settings).</li>
 </ul>
 <p>The game does not ask for access to your contacts, photos, files, camera, microphone or location.</p>
 
 <h2 id="providers">12. Service providers</h2>
-<p>We use only Google services, which process data for us under their terms: Firebase (Cloud Firestore, Authentication, App Check, Analytics, Crashlytics, Hosting for invite links) Google Play (Play Games, Install Referrer, ratings and updates, billing) and Google AdMob (ads and the consent form). Firebase data is stored in the United States, so your data may be processed outside your country. Google protects such transfers with safeguards such as the European Commission's Standard Contractual Clauses. Learn more in <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. We do not sell or rent data to anyone.</p>
+<p>We use only Google services, which process data for us under their terms: Firebase (Cloud Firestore, Authentication, App Check, Analytics, Crashlytics, Cloud Messaging, Hosting for invite links) Google Play (Play Games, Install Referrer, ratings and updates, billing) and Google AdMob (ads and the consent form). Firebase data is stored in the United States, so your data may be processed outside your country. Google protects such transfers with safeguards such as the European Commission's Standard Contractual Clauses. Learn more in <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. We do not sell or rent data to anyone.</p>
 
 <h2 id="retention">13. How long data is kept</h2>
 <div class="table">
@@ -179,7 +180,7 @@
 <li><strong>Delete by email:</strong> write to <a href="mailto:moonbytelabs.support@gmail.com">moonbytelabs.support@gmail.com</a> with the subject “Orbiq data deletion”, your nickname and the days you played. We delete the matching data within 30 days and confirm by email.</li>
 <li><strong>Stay offline:</strong> the game works fully without the internet; nothing is sent while you are offline.</li>
 <li><strong>Hide your name when sharing:</strong> turn off “Show my name” on the share screen.</li>
-<li><strong>Turn off reminders:</strong> in Settings, or in your phone's notification settings.</li>
+<li><strong>Turn off reminders or sales and news:</strong> in Settings (“Daily reminders”, “Sales &amp; news”), or in your phone's notification settings.</li>
 <li><strong>Data on your phone:</strong> uninstall the game or clear its storage.</li>
 <li><strong>Google Play Games:</strong> manage or delete it in the Google Play Games app.</li>
 <li><strong>Ads:</strong> change your ad consent (EU, EEA, UK, Switzerland) or opt out of the sale or sharing of your data (US states with privacy laws) in Settings → Shop &amp; ads → Ad privacy choices, reset or delete your advertising ID in your phone's settings, or buy “Remove Ads” to stop ads between games.</li>
